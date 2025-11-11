@@ -258,18 +258,8 @@ Gaps are scored on multiple dimensions:
 - Some components use simplified algorithms (e.g., regex-based theorem extraction); full implementation would use more sophisticated NLP.
 - The system is designed to be extensible - new agents and analysis methods can be easily added.
 
-## License
-
-[To be determined]
-
 ## Contributing
 
 This is an active research project. Contributions welcome!
 
-## Citation
-
-If you use this system in your research, please cite:
-```
-[Citation information to be added]
-```
 
