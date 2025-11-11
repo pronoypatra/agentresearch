@@ -199,14 +199,14 @@ temporal_metadata = stage2_results['temporal_metadata']
 
 ## Current Status
 
-✅ **Fully Implemented:**
+**Implementation:**
 - Stage 1: Paper search, deep analysis, unified notation, context building
 - Stage 2: Query generation, multi-query search, temporal arrangement, shallow analysis, gap synthesis
 - Knowledge base: All storage components
 - Gradio interface: Both Stage 1 and Stage 2
 - Coordinator: Full two-stage workflow orchestration
 
-🚧 **Future Enhancements:**
+**Future Enhancements:**
 - Mathematical Relation Graph (MRG) with embeddings
 - Evaluation framework with quantitative metrics
 - Enhanced theorem/proof extraction
