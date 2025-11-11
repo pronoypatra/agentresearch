@@ -1,0 +1,893 @@
+{
+  "2509.15073": {
+    "paper_id": "2509.15073",
+    "title": "Constrained Feedback Learning for Non-Stationary Multi-Armed Bandits",
+    "authors": [
+      "Shaoang Li",
+      "Jian Li"
+    ],
+    "abstract": "Non-stationary multi-armed bandits enable agents to adapt to changing environments by incorporating mechanisms to detect and respond to shifts in reward distributions, making them well-suited for dynamic settings. However, existing approaches typically assume that reward feedback is available at every round - an assumption that overlooks many real-world scenarios where feedback is limited. In this paper, we take a significant step forward by introducing a new model of constrained feedback in non-stationary multi-armed bandits, where the availability of reward feedback is restricted. We propose the first prior-free algorithm - that is, one that does not require prior knowledge of the degree of non-stationarity - that achieves near-optimal dynamic regret in this setting. Specifically, our algorithm attains a dynamic regret of $\\tilde{\\mathcal{O}}({K^{1/3} V_T^{1/3} T }/{ B^{1/3}})$, where $T$ is the number of rounds, $K$ is the number of arms, $B$ is the query budget, and $V_T$ is the variation budget capturing the degree of non-stationarity.",
+    "arxiv_id": "2509.15073",
+    "publication_date": "2025-09-18T15:35:32+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2509.15073",
+    "source": "arxiv",
+    "content": null,
+    "tier": 1,
+    "analysis_status": "completed"
+  },
+  "2505.24692": {
+    "paper_id": "2505.24692",
+    "title": "Quick-Draw Bandits: Quickly Optimizing in Nonstationary Environments with Extremely Many Arms",
+    "authors": [
+      "Derek Everett",
+      "Fred Lu",
+      "Edward Raff",
+      "Fernando Camacho",
+      "James Holt"
+    ],
+    "abstract": "Canonical algorithms for multi-armed bandits typically assume a stationary reward environment where the size of the action space (number of arms) is small. More recently developed methods typically relax only one of these assumptions: existing non-stationary bandit policies are designed for a small number of arms, while Lipschitz, linear, and Gaussian process bandit policies are designed to handle a large (or infinite) number of arms in stationary reward environments under constraints on the reward function. In this manuscript, we propose a novel policy to learn reward environments over a continuous space using Gaussian interpolation. We show that our method efficiently learns continuous Lipschitz reward functions with $\\mathcal{O}^*(\\sqrt{T})$ cumulative regret. Furthermore, our method naturally extends to non-stationary problems with a simple modification. We finally demonstrate that our method is computationally favorable (100-10000x faster) and experimentally outperforms sliding Gaussian process policies on datasets with non-stationarity and an extremely large number of arms.",
+    "arxiv_id": "2505.24692",
+    "publication_date": "2025-05-30T15:15:18+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2505.24692",
+    "source": "arxiv",
+    "content": null,
+    "tier": 1,
+    "analysis_status": "completed"
+  },
+  "2505.20051": {
+    "paper_id": "2505.20051",
+    "title": "Catoni-Style Change Point Detection for Regret Minimization in Non-Stationary Heavy-Tailed Bandits",
+    "authors": [
+      "Gianmarco Genalti",
+      "Sujay Bhatt",
+      "Nicola Gatti",
+      "Alberto Maria Metelli"
+    ],
+    "abstract": "Regret minimization in stochastic non-stationary bandits gained popularity over the last decade, as it can model a broad class of real-world problems, from advertising to recommendation systems. Existing literature relies on various assumptions about the reward-generating process, such as Bernoulli or subgaussian rewards. However, in settings such as finance and telecommunications, heavy-tailed distributions naturally arise. In this work, we tackle the heavy-tailed piecewise-stationary bandit problem. Heavy-tailed bandits, introduced by Bubeck et al., 2013, operate on the minimal assumption that the finite absolute centered moments of maximum order $1+\\epsilon$ are uniformly bounded by a constant $v&lt;+\\infty$, for some $\\epsilon \\in (0,1]$. We focus on the most popular non-stationary bandit setting, i.e., the piecewise-stationary setting, in which the mean of reward-generating distributions may change at unknown time steps. We provide a novel Catoni-style change-point detection strategy tailored for heavy-tailed distributions that relies on recent advancements in the theory of sequential estimation, which is of independent interest. We introduce Robust-CPD-UCB, which combines this change-point detection strategy with optimistic algorithms for bandits, providing its regret upper bound and an impossibility result on the minimum attainable regret for any policy. Finally, we validate our approach through numerical experiments on synthetic and real-world datasets.",
+    "arxiv_id": "2505.20051",
+    "publication_date": "2025-05-26T14:40:47+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2505.20051",
+    "source": "arxiv",
+    "content": null,
+    "tier": 1,
+    "analysis_status": "completed"
+  },
+  "2505.18871": {
+    "paper_id": "2505.18871",
+    "title": "Non-Stationary Lipschitz Bandits",
+    "authors": [
+      "Nicolas Nguyen",
+      "Solenne Gaucher",
+      "Claire Vernade"
+    ],
+    "abstract": "We study the problem of non-stationary Lipschitz bandits, where the number of actions is infinite and the reward function, satisfying a Lipschitz assumption, can change arbitrarily over time. We design an algorithm that adaptively tracks the recently introduced notion of significant shifts, defined by large deviations of the cumulative reward function. To detect such reward changes, our algorithm leverages a hierarchical discretization of the action space. Without requiring any prior knowledge of the non-stationarity, our algorithm achieves a minimax-optimal dynamic regret bound of $\\mathcal{\\widetilde{O}}(\\tilde{L}^{1/3}T^{2/3})$, where $\\tilde{L}$ is the number of significant shifts and $T$ the horizon. This result provides the first optimal guarantee in this setting.",
+    "arxiv_id": "2505.18871",
+    "publication_date": "2025-05-24T21:23:19+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2505.18871",
+    "source": "arxiv",
+    "content": null,
+    "tier": 1,
+    "analysis_status": "completed"
+  },
+  "2501.19401": {
+    "paper_id": "2501.19401",
+    "title": "DAL: A Practical Prior-Free Black-Box Framework for Non-Stationary Bandits",
+    "authors": [
+      "Argyrios Gerogiannis",
+      "Yu-Han Huang",
+      "Subhonmesh Bose",
+      "Venugopal V. Veeravalli"
+    ],
+    "abstract": "We introduce a practical, black-box framework termed Detection Augmented Learning (DAL) for the problem of non-stationary bandits without prior knowledge of the underlying non-stationarity. DAL accepts any stationary bandit algorithm as input and augments it with a change detector, enabling applicability to all common bandit variants. Extensive experimentation demonstrates that DAL consistently surpasses current state-of-the-art methods across diverse non-stationary scenarios, including synthetic benchmarks and real-world datasets, underscoring its versatility and scalability. We provide theoretical insights into DAL's strong empirical performance, complemented by thorough experimental validation.",
+    "arxiv_id": "2501.19401",
+    "publication_date": "2025-01-31T18:57:21+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2501.19401",
+    "source": "arxiv",
+    "content": null,
+    "tier": 1,
+    "analysis_status": "completed"
+  },
+  "2403.10732": {
+    "paper_id": "2403.10732",
+    "title": "Variance-Dependent Regret Bounds for Non-stationary Linear Bandits",
+    "authors": [
+      "Zhiyong Wang",
+      "Jize Xie",
+      "Yi Chen",
+      "John C. S. Lui",
+      "Dongruo Zhou"
+    ],
+    "abstract": "We investigate the non-stationary stochastic linear bandit problem where the reward distribution evolves each round. Existing algorithms characterize the non-stationarity by the total variation budget $B_K$, which is the summation of the change of the consecutive feature vectors of the linear bandits over $K$ rounds. However, such a quantity only measures the non-stationarity with respect to the expectation of the reward distribution, which makes existing algorithms sub-optimal under the general non-stationary distribution setting. In this work, we propose algorithms that utilize the variance of the reward distribution as well as the $B_K$, and show that they can achieve tighter regret upper bounds. Specifically, we introduce two novel algorithms: Restarted Weighted$\\text{OFUL}^+$ and Restarted $\\text{SAVE}^+$. These algorithms address cases where the variance information of the rewards is known and unknown, respectively. Notably, when the total variance $V_K$ is much smaller than $K$, our algorithms outperform previous state-of-the-art results on non-stationary stochastic linear bandits under different settings. Experimental evaluations further validate the superior performance of our proposed algorithms over existing works.",
+    "arxiv_id": "2403.10732",
+    "publication_date": "2024-03-15T23:36:55+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2403.10732",
+    "source": "arxiv",
+    "content": null,
+    "tier": 1,
+    "analysis_status": "completed"
+  },
+  "2303.02691": {
+    "paper_id": "2303.02691",
+    "title": "Revisiting Weighted Strategy for Non-stationary Parametric Bandits",
+    "authors": [
+      "Jing Wang",
+      "Peng Zhao",
+      "Zhi-Hua Zhou"
+    ],
+    "abstract": "Non-stationary parametric bandits have attracted much attention recently. There are three principled ways to deal with non-stationarity, including sliding-window, weighted, and restart strategies. As many non-stationary environments exhibit gradual drifting patterns, the weighted strategy is commonly adopted in real-world applications. However, previous theoretical studies show that its analysis is more involved and the algorithms are either computationally less efficient or statistically suboptimal. This paper revisits the weighted strategy for non-stationary parametric bandits. In linear bandits (LB), we discover that this undesirable feature is due to an inadequate regret analysis, which results in an overly complex algorithm design. We propose a refined analysis framework, which simplifies the derivation and importantly produces a simpler weight-based algorithm that is as efficient as window/restart-based algorithms while retaining the same regret as previous studies. Furthermore, our new framework can be used to improve regret bounds of other parametric bandits, including Generalized Linear Bandits (GLB) and Self-Concordant Bandits (SCB). For example, we develop a simple weighted GLB algorithm with an $\\widetilde{O}(k_\\mu^{\\frac{5}{4}} c_\\mu^{-\\frac{3}{4}} d^{\\frac{3}{4}} P_T^{\\frac{1}{4}}T^{\\frac{3}{4}})$ regret, improving the $\\widetilde{O}(k_\\mu^{2} c_\\mu^{-1}d^{\\frac{9}{10}} P_T^{\\frac{1}{5}}T^{\\frac{4}{5}})$ bound in prior work, where $k_\\mu$ and $c_\\mu$ characterize the reward model's nonlinearity, $P_T$ measures the non-stationarity, $d$ and $T$ denote the dimension and time horizon.",
+    "arxiv_id": "2303.02691",
+    "publication_date": "2023-03-05T15:11:14+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2303.02691",
+    "source": "arxiv",
+    "content": null,
+    "tier": 1,
+    "analysis_status": "completed"
+  },
+  "2302.12202": {
+    "paper_id": "2302.12202",
+    "title": "A Definition of Non-Stationary Bandits",
+    "authors": [
+      "Yueyang Liu",
+      "Xu Kuang",
+      "Benjamin Van Roy"
+    ],
+    "abstract": "Despite the subject of non-stationary bandit learning having attracted much recent attention, we have yet to identify a formal definition of non-stationarity that can consistently distinguish non-stationary bandits from stationary ones. Prior work has characterized non-stationary bandits as bandits for which the reward distribution changes over time. We demonstrate that this definition can ambiguously classify the same bandit as both stationary and non-stationary; this ambiguity arises in the existing definition's dependence on the latent sequence of reward distributions. Moreover, the definition has given rise to two widely used notions of regret: the dynamic regret and the weak regret. These notions are not indicative of qualitative agent performance in some bandits. Additionally, this definition of non-stationary bandits has led to the design of agents that explore excessively. We introduce a formal definition of non-stationary bandits that resolves these issues. Our new definition provides a unified approach, applicable seamlessly to both Bayesian and frequentist formulations of bandits. Furthermore, our definition ensures consistent classification of two bandits offering agents indistinguishable experiences, categorizing them as either both stationary or both non-stationary. This advancement provides a more robust framework for non-stationary bandit learning.",
+    "arxiv_id": "2302.12202",
+    "publication_date": "2023-02-23T17:55:11+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2302.12202",
+    "source": "arxiv",
+    "content": null,
+    "tier": 1,
+    "analysis_status": "completed"
+  },
+  "2206.00120": {
+    "paper_id": "2206.00120",
+    "title": "Decentralized Competing Bandits in Non-Stationary Matching Markets",
+    "authors": [
+      "Avishek Ghosh",
+      "Abishek Sankararaman",
+      "Kannan Ramchandran",
+      "Tara Javidi",
+      "Arya Mazumdar"
+    ],
+    "abstract": "Understanding complex dynamics of two-sided online matching markets, where the demand-side agents compete to match with the supply-side (arms), has recently received substantial interest. To that end, in this paper, we introduce the framework of decentralized two-sided matching market under non stationary (dynamic) environments. We adhere to the serial dictatorship setting, where the demand-side agents have unknown and different preferences over the supply-side (arms), but the arms have fixed and known preference over the agents. We propose and analyze a decentralized and asynchronous learning algorithm, namely Decentralized Non-stationary Competing Bandits (\\texttt{DNCB}), where the agents play (restrictive) successive elimination type learning algorithms to learn their preference over the arms. The complexity in understanding such a system stems from the fact that the competing bandits choose their actions in an asynchronous fashion, and the lower ranked agents only get to learn from a set of arms, not \\emph{dominated} by the higher ranked agents, which leads to \\emph{forced exploration}. With carefully defined complexity parameters, we characterize this \\emph{forced exploration} and obtain sub-linear (logarithmic) regret of \\texttt{DNCB}. Furthermore, we validate our theoretical findings via experiments.",
+    "arxiv_id": "2206.00120",
+    "publication_date": "2022-05-31T21:05:30+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2206.00120",
+    "source": "arxiv",
+    "content": null,
+    "tier": 1,
+    "analysis_status": "completed"
+  },
+  "2205.14775": {
+    "paper_id": "2205.14775",
+    "title": "An Optimization-based Algorithm for Non-stationary Kernel Bandits without Prior Knowledge",
+    "authors": [
+      "Kihyuk Hong",
+      "Yuhang Li",
+      "Ambuj Tewari"
+    ],
+    "abstract": "We propose an algorithm for non-stationary kernel bandits that does not require prior knowledge of the degree of non-stationarity. The algorithm follows randomized strategies obtained by solving optimization problems that balance exploration and exploitation. It adapts to non-stationarity by restarting when a change in the reward function is detected. Our algorithm enjoys a tighter dynamic regret bound than previous work on the non-stationary kernel bandit setting. Moreover, when applied to the non-stationary linear bandit setting by using a linear kernel, our algorithm is nearly minimax optimal, solving an open problem in the non-stationary linear bandit literature. We extend our algorithm to use a neural network for dynamically adapting the feature mapping to observed data. We prove a dynamic regret bound of the extension using the neural tangent kernel theory. We demonstrate empirically that our algorithm and the extension can adapt to varying degrees of non-stationarity.",
+    "arxiv_id": "2205.14775",
+    "publication_date": "2022-05-29T21:32:53+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2205.14775",
+    "source": "arxiv",
+    "content": null,
+    "tier": 1,
+    "analysis_status": "completed"
+  },
+  "2110.12916": {
+    "paper_id": "2110.12916",
+    "title": "On Slowly-varying Non-stationary Bandits",
+    "authors": [
+      "Ramakrishnan Krishnamurthy",
+      "Aditya Gopalan"
+    ],
+    "abstract": "We consider minimisation of dynamic regret in non-stationary bandits with a slowly varying property. Namely, we assume that arms' rewards are stochastic and independent over time, but that the absolute difference between the expected rewards of any arm at any two consecutive time-steps is at most a drift limit $\\delta &gt; 0$. For this setting that has not received enough attention in the past, we give a new algorithm which extends naturally the well-known Successive Elimination algorithm to the non-stationary bandit setting. We establish the first instance-dependent regret upper bound for slowly varying non-stationary bandits. The analysis in turn relies on a novel characterization of the instance as a detectable gap profile that depends on the expected arm reward differences. We also provide the first minimax regret lower bound for this problem, enabling us to show that our algorithm is essentially minimax optimal. Also, this lower bound we obtain matches that of the more general total variation-budgeted bandits problem, establishing that the seemingly easier former problem is at least as hard as the more general latter problem in the minimax sense. We complement our theoretical results with experimental illustrations.",
+    "arxiv_id": "2110.12916",
+    "publication_date": "2021-10-25T12:56:19+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2110.12916",
+    "source": "arxiv",
+    "content": null,
+    "tier": 1,
+    "analysis_status": "completed"
+  },
+  "2009.02463": {
+    "paper_id": "2009.02463",
+    "title": "Unifying Clustered and Non-stationary Bandits",
+    "authors": [
+      "Chuanhao Li",
+      "Qingyun Wu",
+      "Hongning Wang"
+    ],
+    "abstract": "Non-stationary bandits and online clustering of bandits lift the restrictive assumptions in contextual bandits and provide solutions to many important real-world scenarios. Though the essence in solving these two problems overlaps considerably, they have been studied independently. In this paper, we connect these two strands of bandit research under the notion of test of homogeneity, which seamlessly addresses change detection for non-stationary bandit and cluster identification for online clustering of bandit in a unified solution framework. Rigorous regret analysis and extensive empirical evaluations demonstrate the value of our proposed solution, especially its flexibility in handling various environment assumptions.",
+    "arxiv_id": "2009.02463",
+    "publication_date": "2020-09-05T04:58:06+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2009.02463",
+    "source": "arxiv",
+    "content": null,
+    "tier": 1,
+    "analysis_status": "completed"
+  },
+  "2402.03110": {
+    "paper_id": "2402.03110",
+    "title": "Non-Stationary Latent Auto-Regressive Bandits",
+    "authors": [
+      "Anna L. Trella",
+      "Walter Dempsey",
+      "Asim H. Gazi",
+      "Ziping Xu",
+      "Finale Doshi-Velez",
+      "Susan A. Murphy"
+    ],
+    "abstract": "For the non-stationary multi-armed bandit (MAB) problem, many existing methods allow a general mechanism for the non-stationarity, but rely on a budget for the non-stationarity that is sub-linear to the total number of time steps $T$. In many real-world settings, however, the mechanism for the non-stationarity can be modeled, but there is no budget for the non-stationarity. We instead consider the non-stationary bandit problem where the reward means change due to a latent, auto-regressive (AR) state. We develop Latent AR LinUCB (LARL), an online linear contextual bandit algorithm that does not rely on the non-stationary budget, but instead forms good predictions of reward means by implicitly predicting the latent state. The key idea is to reduce the problem to a linear dynamical system which can be solved as a linear contextual bandit. In fact, LARL approximates a steady-state Kalman filter and efficiently learns system parameters online. We provide an interpretable regret bound for LARL with respect to the level of non-stationarity in the environment. LARL achieves sub-linear regret in this setting if the noise variance of the latent state process is sufficiently small with respect to $T$. Empirically, LARL outperforms various baseline methods in this non-stationary bandit problem.",
+    "arxiv_id": "2402.03110",
+    "publication_date": "2024-02-05T15:38:01+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2402.03110",
+    "source": "arxiv",
+    "content": null,
+    "tier": 1,
+    "analysis_status": "completed"
+  },
+  "2308.01028": {
+    "paper_id": "2308.01028",
+    "title": "Maximizing Success Rate of Payment Routing using Non-stationary Bandits",
+    "authors": [
+      "Aayush Chaudhary",
+      "Abhinav Rai",
+      "Abhishek Gupta"
+    ],
+    "abstract": "This paper discusses the system architecture design and deployment of non-stationary multi-armed bandit approaches to determine a near-optimal payment routing policy based on the recent history of transactions. We propose a Routing Service architecture using a novel Ray-based implementation for optimally scaling bandit-based payment routing to over 10,000 transactions per second, adhering to the system design requirements and ecosystem constraints with Payment Card Industry Data Security Standard (PCI DSS). We first evaluate the effectiveness of multiple bandit-based payment routing algorithms on a custom simulator to benchmark multiple non-stationary bandit approaches and identify the best hyperparameters. We then conducted live experiments on the payment transaction system on a fantasy sports platform Dream11. In the live experiments, we demonstrated that our non-stationary bandit-based algorithm consistently improves the success rate of transactions by 0.92% compared to the traditional rule-based methods over one month.",
+    "arxiv_id": "2308.01028",
+    "publication_date": "2023-08-02T09:23:16+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2308.01028",
+    "source": "arxiv",
+    "content": null,
+    "tier": 1,
+    "analysis_status": "completed"
+  },
+  "1710.10657": {
+    "paper_id": "1710.10657",
+    "title": "Discrepancy-Based Algorithms for Non-Stationary Rested Bandits",
+    "authors": [
+      "Corinna Cortes",
+      "Giulia DeSalvo",
+      "Vitaly Kuznetsov",
+      "Mehryar Mohri",
+      "Scott Yang"
+    ],
+    "abstract": "We study the multi-armed bandit problem where the rewards are realizations of general non-stationary stochastic processes, a setting that generalizes many existing lines of work and analyses. In particular, we present a theoretical analysis and derive regret guarantees for rested bandits in which the reward distribution of each arm changes only when we pull that arm. Remarkably, our regret bounds are logarithmic in the number of rounds under several natural conditions. We introduce a new algorithm based on classical UCB ideas combined with the notion of weighted discrepancy, a useful tool for measuring the non-stationarity of a stochastic process. We show that the notion of discrepancy can be used to design very general algorithms and a unified framework for the analysis of multi-armed rested bandit problems with non-stationary rewards. In particular, we show that we can recover the regret guarantees of many specific instances of bandit problems with non-stationary rewards that have been studied in the literature. We also provide experiments demonstrating that our algorithms can enjoy a significant improvement in practice compared to standard benchmarks.",
+    "arxiv_id": "1710.10657",
+    "publication_date": "2017-10-29T17:59:19+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/1710.10657",
+    "source": "arxiv",
+    "content": null,
+    "tier": 1,
+    "analysis_status": "completed"
+  },
+  "2002.05289": {
+    "paper_id": "2002.05289",
+    "title": "Multiscale Non-stationary Stochastic Bandits",
+    "authors": [
+      "Qin Ding",
+      "Cho-Jui Hsieh",
+      "James Sharpnack"
+    ],
+    "abstract": "Classic contextual bandit algorithms for linear models, such as LinUCB, assume that the reward distribution for an arm is modeled by a stationary linear regression. When the linear regression model is non-stationary over time, the regret of LinUCB can scale linearly with time. In this paper, we propose a novel multiscale changepoint detection method for the non-stationary linear bandit problems, called Multiscale-LinUCB, which actively adapts to the changing environment. We also provide theoretical analysis of regret bound for Multiscale-LinUCB algorithm. Experimental results show that our proposed Multiscale-LinUCB algorithm outperforms other state-of-the-art algorithms in non-stationary contextual environments.",
+    "arxiv_id": "2002.05289",
+    "publication_date": "2020-02-13T00:24:17+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2002.05289",
+    "source": "arxiv",
+    "content": null,
+    "tier": 1,
+    "analysis_status": "completed"
+  },
+  "1808.02933": {
+    "paper_id": "1808.02933",
+    "title": "Sequential Monte Carlo Bandits",
+    "authors": [
+      "I\u00f1igo Urteaga",
+      "Chris H. Wiggins"
+    ],
+    "abstract": "We extend Bayesian multi-armed bandit (MAB) algorithms beyond their original setting by making use of sequential Monte Carlo (SMC) methods. A MAB is a sequential decision making problem where the goal is to learn a policy that maximizes long term payoff, where only the reward of the executed action is observed. In the stochastic MAB, the reward for each action is generated from an unknown distribution, often assumed to be stationary. To decide which action to take next, a MAB agent must learn the characteristics of the unknown reward distribution, e.g., compute its sufficient statistics. However, closed-form expressions for these statistics are analytically intractable except for simple, stationary cases. We here utilize SMC for estimation of the statistics Bayesian MAB agents compute, and devise flexible policies that can address a rich class of bandit problems: i.e., MABs with nonlinear, stateless- and context-dependent reward distributions that evolve over time. We showcase how non-stationary bandits, where time dynamics are modeled via linear dynamical systems, can be successfully addressed by SMC-based Bayesian bandit agents. We empirically demonstrate good regret performance of the proposed SMC-based bandit policies in several MAB scenarios that have remained elusive, i.e., in non-stationary bandits with nonlinear rewards.",
+    "arxiv_id": "1808.02933",
+    "publication_date": "2018-08-08T20:40:42+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/1808.02933",
+    "source": "arxiv",
+    "content": null,
+    "tier": 1,
+    "analysis_status": "completed"
+  },
+  "2510.26575": {
+    "paper_id": "2510.26575",
+    "title": "InfoFlow: Reinforcing Search Agent Via Reward Density Optimization",
+    "authors": [
+      "Kun Luo",
+      "Hongjin Qian",
+      "Zheng Liu",
+      "Ziyi Xia",
+      "Shitao Xiao",
+      "Siqi Bao",
+      "Jun Zhao",
+      "Kang Liu"
+    ],
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) is a promising approach for enhancing agentic deep search. However, its application is often hindered by low \\textbf{Reward Density} in deep search scenarios, where agents expend significant exploratory costs for infrequent and often null final rewards. In this paper, we formalize this challenge as the \\textbf{Reward Density Optimization} problem, which aims to improve the reward obtained per unit of exploration cost. This paper introduce \\textbf{InfoFlow}, a systematic framework that tackles this problem from three aspects. 1) \\textbf{Subproblem decomposition}: breaking down long-range tasks to assign process rewards, thereby providing denser learning signals. 2) \\textbf{Failure-guided hints}: injecting corrective guidance into stalled trajectories to increase the probability of successful outcomes. 3) \\textbf{Dual-agent refinement}: employing a dual-agent architecture to offload the cognitive burden of deep exploration. A refiner agent synthesizes the search history, which effectively compresses the researcher's perceived trajectory, thereby reducing exploration cost and increasing the overall reward density. We evaluate InfoFlow on multiple agentic search benchmarks, where it significantly outperforms strong baselines, enabling lightweight LLMs to achieve performance comparable to advanced proprietary LLMs.",
+    "arxiv_id": "2510.26575",
+    "publication_date": "2025-10-30T15:03:21+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2510.26575",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "2408.03029": {
+    "paper_id": "2408.03029",
+    "title": "Highly Efficient Self-Adaptive Reward Shaping for Reinforcement Learning",
+    "authors": [
+      "Haozhe Ma",
+      "Zhengding Luo",
+      "Thanh Vinh Vo",
+      "Kuankuan Sima",
+      "Tze-Yun Leong"
+    ],
+    "abstract": "Reward shaping is a technique in reinforcement learning that addresses the sparse-reward problem by providing more frequent and informative rewards. We introduce a self-adaptive and highly efficient reward shaping mechanism that incorporates success rates derived from historical experiences as shaped rewards. The success rates are sampled from Beta distributions, which dynamically evolve from uncertain to reliable values as data accumulates. Initially, the shaped rewards exhibit more randomness to encourage exploration, while over time, the increasing certainty enhances exploitation, naturally balancing exploration and exploitation. Our approach employs Kernel Density Estimation (KDE) combined with Random Fourier Features (RFF) to derive the Beta distributions, providing a computationally efficient, non-parametric, and learning-free solution for high-dimensional continuous state spaces. Our method is validated on various tasks with extremely sparse rewards, demonstrating notable improvements in sample efficiency and convergence stability over relevant baselines.",
+    "arxiv_id": "2408.03029",
+    "publication_date": "2024-08-06T08:22:16+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2408.03029",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "2503.18130": {
+    "paper_id": "2503.18130",
+    "title": "Mitigating Reward Over-Optimization in RLHF via Behavior-Supported Regularization",
+    "authors": [
+      "Juntao Dai",
+      "Taiye Chen",
+      "Yaodong Yang",
+      "Qian Zheng",
+      "Gang Pan"
+    ],
+    "abstract": "Reinforcement learning from human feedback (RLHF) is an effective method for aligning large language models (LLMs) with human values. However, reward over-optimization remains an open challenge leading to discrepancies between the performance of LLMs under the reward model and the true human objectives. A primary contributor to reward over-optimization is the extrapolation error that arises when the reward model evaluates out-of-distribution (OOD) responses. However, current methods still fail to prevent the increasing frequency of OOD response generation during the reinforcement learning (RL) process and are not effective at handling extrapolation errors from OOD responses. In this work, we propose the Behavior-Supported Policy Optimization (BSPO) method to mitigate the reward over-optimization issue. Specifically, we define behavior policy as the next token distribution of the reward training dataset to model the in-distribution (ID) region of the reward model. Building on this, we introduce the behavior-supported Bellman operator to regularize the value function, penalizing all OOD values without impacting the ID ones. Consequently, BSPO reduces the generation of OOD responses during the RL process, thereby avoiding overestimation caused by the reward model's extrapolation errors. Theoretically, we prove that BSPO guarantees a monotonic improvement of the supported policy until convergence to the optimal behavior-supported policy. Empirical results from extensive experiments show that BSPO outperforms baselines in preventing reward over-optimization due to OOD evaluation and finding the optimal ID policy.",
+    "arxiv_id": "2503.18130",
+    "publication_date": "2025-03-23T16:20:59+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2503.18130",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "2412.15544": {
+    "paper_id": "2412.15544",
+    "title": "VLM-RL: A Unified Vision Language Models and Reinforcement Learning Framework for Safe Autonomous Driving",
+    "authors": [
+      "Zilin Huang",
+      "Zihao Sheng",
+      "Yansong Qu",
+      "Junwei You",
+      "Sikai Chen"
+    ],
+    "abstract": "In recent years, reinforcement learning (RL)-based methods for learning driving policies have gained increasing attention in the autonomous driving community and have achieved remarkable progress in various driving scenarios. However, traditional RL approaches rely on manually engineered rewards, which require extensive human effort and often lack generalizability. To address these limitations, we propose \\textbf{VLM-RL}, a unified framework that integrates pre-trained Vision-Language Models (VLMs) with RL to generate reward signals using image observation and natural language goals. The core of VLM-RL is the contrasting language goal (CLG)-as-reward paradigm, which uses positive and negative language goals to generate semantic rewards. We further introduce a hierarchical reward synthesis approach that combines CLG-based semantic rewards with vehicle state information, improving reward stability and offering a more comprehensive reward signal. Additionally, a batch-processing technique is employed to optimize computational efficiency during training. Extensive experiments in the CARLA simulator demonstrate that VLM-RL outperforms state-of-the-art baselines, achieving a 10.5\\% reduction in collision rate, a 104.6\\% increase in route completion rate, and robust generalization to unseen driving scenarios. Furthermore, VLM-RL can seamlessly integrate almost any standard RL algorithms, potentially revolutionizing the existing RL paradigm that relies on manual reward engineering and enabling continuous performance improvements. The demo video and code can be accessed at: https://zilin-huang.github.io/VLM-RL-website.",
+    "arxiv_id": "2412.15544",
+    "publication_date": "2024-12-20T04:08:11+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2412.15544",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "2509.14203": {
+    "paper_id": "2509.14203",
+    "title": "Bellman Optimality of Average-Reward Robust Markov Decision Processes with a Constant Gain",
+    "authors": [
+      "Shengbo Wang",
+      "Nian Si"
+    ],
+    "abstract": "Learning and optimal control under robust Markov decision processes (MDPs) have received increasing attention, yet most existing theory, algorithms, and applications focus on finite-horizon or discounted models. Long-run average-reward formulations, while natural in many operations research and management contexts, remain underexplored. This is primarily because the dynamic programming foundations are technically challenging and only partially understood, with several fundamental questions remaining open. This paper steps toward a general framework for average-reward robust MDPs by analyzing the constant-gain setting. We study the average-reward robust control problem with possible information asymmetries between the controller and an S-rectangular adversary. Our analysis centers on the constant-gain robust Bellman equation, examining both the existence of solutions and their relationship to the optimal average reward. Specifically, we identify when solutions to the robust Bellman equation characterize the optimal average reward and stationary policies, and we provide one-sided weak communication conditions ensuring solutions' existence. These findings expand the dynamic programming theory for average-reward robust MDPs and lay a foundation for robust dynamic decision making under long-run average criteria in operational environments.",
+    "arxiv_id": "2509.14203",
+    "publication_date": "2025-09-17T17:36:06+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2509.14203",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "2507.16806": {
+    "paper_id": "2507.16806",
+    "title": "Beyond Binary Rewards: Training LMs to Reason About Their Uncertainty",
+    "authors": [
+      "Mehul Damani",
+      "Isha Puri",
+      "Stewart Slocum",
+      "Idan Shenfeld",
+      "Leshem Choshen",
+      "Yoon Kim",
+      "Jacob Andreas"
+    ],
+    "abstract": "When language models (LMs) are trained via reinforcement learning (RL) to generate natural language \"reasoning chains\", their performance improves on a variety of difficult question answering tasks. Today, almost all successful applications of RL for reasoning use binary reward functions that evaluate the correctness of LM outputs. Because such reward functions do not penalize guessing or low-confidence outputs, they often have the unintended side-effect of degrading calibration and increasing the rate at which LMs generate incorrect responses (or \"hallucinate\") in other problem domains. This paper describes RLCR (Reinforcement Learning with Calibration Rewards), an approach to training reasoning models that jointly improves accuracy and calibrated confidence estimation. During RLCR, LMs generate both predictions and numerical confidence estimates after reasoning. They are trained to optimize a reward function that augments a binary correctness score with a Brier score -- a scoring rule for confidence estimates that incentivizes calibrated prediction. We first prove that this reward function (or any analogous reward function that uses a bounded, proper scoring rule) yields models whose predictions are both accurate and well-calibrated. We next show that across diverse datasets, RLCR substantially improves calibration with no loss in accuracy, on both in-domain and out-of-domain evaluations -- outperforming both ordinary RL training and classifiers trained to assign post-hoc confidence scores. While ordinary RL hurts calibration, RLCR improves it. Finally, we demonstrate that verbalized confidence can be leveraged at test time to improve accuracy and calibration via confidence-weighted scaling methods. Our results show that explicitly optimizing for calibration can produce more generally reliable reasoning models.",
+    "arxiv_id": "2507.16806",
+    "publication_date": "2025-07-22T17:56:01+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2507.16806",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "2509.23135": {
+    "paper_id": "2509.23135",
+    "title": "Trust Region Reward Optimization and Proximal Inverse Reward Optimization Algorithm",
+    "authors": [
+      "Yang Chen",
+      "Menglin Zou",
+      "Jiaqi Zhang",
+      "Yitan Zhang",
+      "Junyi Yang",
+      "Gael Gendron",
+      "Libo Zhang",
+      "Jiamou Liu",
+      "Michael J. Witbrock"
+    ],
+    "abstract": "Inverse Reinforcement Learning (IRL) learns a reward function to explain expert demonstrations. Modern IRL methods often use the adversarial (minimax) formulation that alternates between reward and policy optimization, which often lead to unstable training. Recent non-adversarial IRL approaches improve stability by jointly learning reward and policy via energy-based formulations but lack formal guarantees. This work bridges this gap. We first present a unified view showing canonical non-adversarial methods explicitly or implicitly maximize the likelihood of expert behavior, which is equivalent to minimizing the expected return gap. This insight leads to our main contribution: Trust Region Reward Optimization (TRRO), a framework that guarantees monotonic improvement in this likelihood via a Minorization-Maximization process. We instantiate TRRO into Proximal Inverse Reward Optimization (PIRO), a practical and stable IRL algorithm. Theoretically, TRRO provides the IRL counterpart to the stability guarantees of Trust Region Policy Optimization (TRPO) in forward RL. Empirically, PIRO matches or surpasses state-of-the-art baselines in reward recovery, policy imitation with high sample efficiency on MuJoCo and Gym-Robotics benchmarks and a real-world animal behavior modeling task.",
+    "arxiv_id": "2509.23135",
+    "publication_date": "2025-09-27T05:36:13+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2509.23135",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "2509.00793": {
+    "paper_id": "2509.00793",
+    "title": "Sharpe Ratio Optimization in Markov Decision Processes",
+    "authors": [
+      "Shuai Ma",
+      "Guangwu Liu",
+      "Li Xia"
+    ],
+    "abstract": "Sharpe ratio (also known as reward-to-variability ratio) is a widely-used metric in finance, which measures the additional return at the cost of per unit of increased risk (standard deviation of return). However, the optimization of Sharpe ratio in Markov decision processes (MDPs) is challenging, because there exist two difficulties hindering the application of dynamic programming. One is that dynamic programming does not work for fractional objectives, and the other is that dynamic programming is invalid for risk metrics. In this paper, we study the Sharpe ratio optimization in infinite-horizon MDPs, considering both the long-run average and discounted settings. We address the first challenge with the Dinkelbachs transform, which converts the Sharpe ratio objective to a mean-squared-variance (M2V) objective. It is shown that the M2V optimization and the original Sharpe ratio optimization share the same optimal policy when the risk-sensitive parameter is equal to the optimal Sharpe ratio. For the second challenge, we develop an iterative algorithm to solve the M2V optimization which is similar to a mean-variance optimization in MDPs. We iteratively solve the M2V problem and obtain the associated Sharpe ratio that is used to update the risk-sensitive parameter in the next iteration of M2V problems. We show that such a sequence of Sharpe ratios derived is monotonically increasing and converges to the optimal Sharpe ratio. For both average and discounted MDP settings, we develop a policy iteration procedure and prove its convergence to the optimum. Numerical experiments are conducted for validation. To the best of our knowledge, our approach is the first that solves the Sharpe ratio optimization in MDPs with dynamic programming type algorithms. We believe that the proposed algorithm can shed light on solving MDPs with other fractional objectives.",
+    "arxiv_id": "2509.00793",
+    "publication_date": "2025-08-31T10:38:15+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2509.00793",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "2507.19725": {
+    "paper_id": "2507.19725",
+    "title": "Minding Motivation: The Effect of Intrinsic Motivation on Agent Behaviors",
+    "authors": [
+      "Leonardo Villalobos-Arias",
+      "Grant Forbes",
+      "Jianxun Wang",
+      "David L Roberts",
+      "Arnav Jhala"
+    ],
+    "abstract": "Games are challenging for Reinforcement Learning~(RL) agents due to their reward-sparsity, as rewards are only obtainable after long sequences of deliberate actions. Intrinsic Motivation~(IM) methods -- which introduce exploration rewards -- are an effective solution to reward-sparsity. However, IM also causes an issue known as `reward hacking' where the agent optimizes for the new reward at the expense of properly playing the game. The larger problem is that reward hacking itself is largely unknown; there is no answer to whether, and to what extent, IM rewards change the behavior of RL agents. This study takes a first step by empirically evaluating the impact on behavior of three IM techniques on the MiniGrid game-like environment. We compare these IM models with Generalized Reward Matching~(GRM), a method that can be used with any intrinsic reward function to guarantee optimality. Our results suggest that IM causes noticeable change by increasing the initial rewards, but also altering the way the agent plays; and that GRM mitigated reward hacking in some scenarios.",
+    "arxiv_id": "2507.19725",
+    "publication_date": "2025-07-26T00:49:25+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2507.19725",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "2506.22777": {
+    "paper_id": "2506.22777",
+    "title": "Teaching Models to Verbalize Reward Hacking in Chain-of-Thought Reasoning",
+    "authors": [
+      "Miles Turpin",
+      "Andy Arditi",
+      "Marvin Li",
+      "Joe Benton",
+      "Julian Michael"
+    ],
+    "abstract": "Language models trained with reinforcement learning (RL) can engage in reward hacking--the exploitation of unintended strategies for high reward--without revealing this behavior in their chain-of-thought reasoning. This makes the detection of reward hacking difficult, posing risks for high-stakes applications. We propose verbalization fine-tuning (VFT), a pre-RL fine-tuning intervention that trains models to explicitly acknowledge when they are influenced by prompt cues--hints which point to incorrect answers (e.g., \"a Stanford professor thinks the answer is A\"). To evaluate VFT, we subsequently train models with RL on environments where held-out prompt cues signal which incorrect answers will receive high reward, incentivizing models to exploit these cues instead of reasoning correctly. We measure how often models exploit these cues without verbalizing it. After RL, only 6% of the VFT-trained model's responses consist of undetected reward hacks. In comparison, when we perform RL without VFT, the rate of undetected reward hacks goes up to 88%; with a debiasing baseline intervention, this increases further to 99%. VFT achieves this by substantially increasing how often models verbalize the influence of cues, from 8% to 43% after VFT, and up to 94% after RL. Baselines remain low even after RL (11% and 1%). Our results show that teaching models to explicitly verbalize reward hacking behavior before RL significantly improves their detection, offering a practical path toward more transparent and safe AI systems.",
+    "arxiv_id": "2506.22777",
+    "publication_date": "2025-06-28T06:37:10+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2506.22777",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "2506.12998": {
+    "paper_id": "2506.12998",
+    "title": "The Densest SWAMP problem: subhypergraphs with arbitrary monotonic partial edge rewards",
+    "authors": [
+      "Vedangi Bengali",
+      "Nikolaj Tatti",
+      "Iiro Kumpulainen",
+      "Florian Adriaens",
+      "Nate Veldt"
+    ],
+    "abstract": "We consider a generalization of the densest subhypergraph problem where nonnegative rewards are given for including partial hyperedges in a dense subhypergraph. Prior work addressed this problem only in cases where reward functions are convex, in which case the problem is poly-time solvable. We consider a broader setting where rewards are monotonic but otherwise arbitrary. We first prove hardness results for a wide class of non-convex rewards, then design a 1/k-approximation by projecting to the nearest set of convex rewards, where k is the maximum hyperedge size. We also design another 1/k-approximation using a faster peeling algorithm, which (somewhat surprisingly) differs from the standard greedy peeling algorithm used to approximate other variants of the densest subgraph problem. Our results include an empirical analysis of our algorithm across several real-world hypergraphs.",
+    "arxiv_id": "2506.12998",
+    "publication_date": "2025-06-15T23:52:08+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2506.12998",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "2503.21878": {
+    "paper_id": "2503.21878",
+    "title": "Is Best-of-N the Best of Them? Coverage, Scaling, and Optimality in Inference-Time Alignment",
+    "authors": [
+      "Audrey Huang",
+      "Adam Block",
+      "Qinghua Liu",
+      "Nan Jiang",
+      "Akshay Krishnamurthy",
+      "Dylan J. Foster"
+    ],
+    "abstract": "Inference-time computation offers a powerful axis for scaling the performance of language models. However, naively increasing computation in techniques like Best-of-N sampling can lead to performance degradation due to reward hacking. Toward a theoretical understanding of how to best leverage additional computation, we focus on inference-time alignment, which we formalize as the problem of improving the quality of responses drawn from a pre-trained policy, given a prompt of interest and access to an imperfect reward model. We analyze the performance of inference-time alignment algorithms in terms of (i) response quality, and (ii) compute, and provide new results that highlight the importance of the pre-trained policy's coverage over high-quality responses for performance and compute scaling: 1. We show that Best-of-$N$ alignment with an ideal choice for $N$ can achieve optimal performance under stringent notions of coverage, but provably suffers from reward hacking when $N$ is large, and fails to achieve tight guarantees under more realistic coverage conditions. 2. We introduce $\\texttt{InferenceTimePessimism}$, a new algorithm which mitigates reward hacking through deliberate use of inference-time compute, implementing the principle of pessimism in the face of uncertainty via rejection sampling; we prove that its performance is optimal and does not degrade with $N$, meaning it is scaling-monotonic. We complement our theoretical results with an experimental evaluation that demonstrate the benefits of $\\texttt{InferenceTimePessimism}$ across a variety of tasks and models.",
+    "arxiv_id": "2503.21878",
+    "publication_date": "2025-03-27T18:00:08+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2503.21878",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "2103.04529": {
+    "paper_id": "2103.04529",
+    "title": "Self-Supervised Online Reward Shaping in Sparse-Reward Environments",
+    "authors": [
+      "Farzan Memarian",
+      "Wonjoon Goo",
+      "Rudolf Lioutikov",
+      "Scott Niekum",
+      "Ufuk Topcu"
+    ],
+    "abstract": "We introduce Self-supervised Online Reward Shaping (SORS), which aims to improve the sample efficiency of any RL algorithm in sparse-reward environments by automatically densifying rewards. The proposed framework alternates between classification-based reward inference and policy update steps -- the original sparse reward provides a self-supervisory signal for reward inference by ranking trajectories that the agent observes, while the policy update is performed with the newly inferred, typically dense reward function. We introduce theory that shows that, under certain conditions, this alteration of the reward function will not change the optimal policy of the original MDP, while potentially increasing learning speed significantly. Experimental results on several sparse-reward environments demonstrate that, across multiple domains, the proposed algorithm is not only significantly more sample efficient than a standard RL baseline using sparse rewards, but, at times, also achieves similar sample efficiency compared to when hand-designed dense reward functions are used.",
+    "arxiv_id": "2103.04529",
+    "publication_date": "2021-03-08T03:28:04+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2103.04529",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "2310.13264": {
+    "paper_id": "2310.13264",
+    "title": "Alt-Caffarelli-Friedman monotonicity formula and mean value properties in Carnot groups with applications",
+    "authors": [
+      "Fausto Ferrari",
+      "Nicol\u00f2 Forcillo"
+    ],
+    "abstract": "In this paper we provide a different approach to the Alt-Caffarelli-Friedman monotonicity formula, reducing the problem to test the monotone increasing behavior of the mean value of a function involving the norm of the gradient. In particular, we show that our argument holds in the general framework of Carnot groups.",
+    "arxiv_id": "2310.13264",
+    "publication_date": "2023-10-20T04:04:56+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2310.13264",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "2006.08852": {
+    "paper_id": "2006.08852",
+    "title": "Counterexample-Guided Learning of Monotonic Neural Networks",
+    "authors": [
+      "Aishwarya Sivaraman",
+      "Golnoosh Farnadi",
+      "Todd Millstein",
+      "Guy Van den Broeck"
+    ],
+    "abstract": "The widespread adoption of deep learning is often attributed to its automatic feature construction with minimal inductive bias. However, in many real-world tasks, the learned function is intended to satisfy domain-specific constraints. We focus on monotonicity constraints, which are common and require that the function's output increases with increasing values of specific input features. We develop a counterexample-guided technique to provably enforce monotonicity constraints at prediction time. Additionally, we propose a technique to use monotonicity as an inductive bias for deep learning. It works by iteratively incorporating monotonicity counterexamples in the learning process. Contrary to prior work in monotonic learning, we target general ReLU neural networks and do not further restrict the hypothesis space. We have implemented these techniques in a tool called COMET. Experiments on real-world datasets demonstrate that our approach achieves state-of-the-art results compared to existing monotonic learners, and can improve the model quality compared to those that were trained without taking monotonicity constraints into account.",
+    "arxiv_id": "2006.08852",
+    "publication_date": "2020-06-16T01:04:26+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2006.08852",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "2212.03704": {
+    "paper_id": "2212.03704",
+    "title": "Semiparametric Distribution Regression with Instruments and Monotonicity",
+    "authors": [
+      "Dominik Wied"
+    ],
+    "abstract": "This paper proposes IV-based estimators for the semiparametric distribution regression model in the presence of an endogenous regressor, which are based on an extension of IV probit estimators. We discuss the causal interpretation of the estimators and two methods (monotone rearrangement and isotonic regression) to ensure a monotonically increasing distribution function. Asymptotic properties and simulation evidence are provided. An application to wage equations reveals statistically significant and heterogeneous differences to the inconsistent OLS-based estimator.",
+    "arxiv_id": "2212.03704",
+    "publication_date": "2022-12-07T15:23:47+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2212.03704",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "2509.25438": {
+    "paper_id": "2509.25438",
+    "title": "Beyond Noisy-TVs: Noise-Robust Exploration Via Learning Progress Monitoring",
+    "authors": [
+      "Zhibo Hou",
+      "Zhiyu An",
+      "Wan Du"
+    ],
+    "abstract": "When there exists an unlearnable source of randomness (noisy-TV) in the environment, a naively intrinsic reward driven exploring agent gets stuck at that source of randomness and fails at exploration. Intrinsic reward based on uncertainty estimation or distribution similarity, while eventually escapes noisy-TVs as time unfolds, suffers from poor sample efficiency and high computational cost. Inspired by recent findings from neuroscience that humans monitor their improvements during exploration, we propose a novel method for intrinsically-motivated exploration, named Learning Progress Monitoring (LPM). During exploration, LPM rewards model improvements instead of prediction error or novelty, effectively rewards the agent for observing learnable transitions rather than the unlearnable transitions. We introduce a dual-network design that uses an error model to predict the expected prediction error of the dynamics model in its previous iteration, and use the difference between the model errors of the current iteration and previous iteration to guide exploration. We theoretically show that the intrinsic reward of LPM is zero-equivariant and a monotone indicator of Information Gain (IG), and that the error model is necessary to achieve monotonicity correspondence with IG. We empirically compared LPM against state-of-the-art baselines in noisy environments based on MNIST, 3D maze with 160x120 RGB inputs, and Atari. Results show that LPM's intrinsic reward converges faster, explores more states in the maze experiment, and achieves higher extrinsic reward in Atari. This conceptually simple approach marks a shift-of-paradigm of noise-robust exploration. For code to reproduce our experiments, see https://github.com/Akuna23Matata/LPM_exploration",
+    "arxiv_id": "2509.25438",
+    "publication_date": "2025-09-29T19:43:44+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2509.25438",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "2508.05984": {
+    "paper_id": "2508.05984",
+    "title": "Parameter-free Optimal Rates for Nonlinear Semi-Norm Contractions with Applications to $Q$-Learning",
+    "authors": [
+      "Ankur Naskar",
+      "Gugan Thoppe",
+      "Vijay Gupta"
+    ],
+    "abstract": "Algorithms for solving \\textit{nonlinear} fixed-point equations -- such as average-reward \\textit{$Q$-learning} and \\textit{TD-learning} -- often involve semi-norm contractions. Achieving parameter-free optimal convergence rates for these methods via Polyak--Ruppert averaging has remained elusive, largely due to the non-monotonicity of such semi-norms. We close this gap by (i.) recasting the averaged error as a linear recursion involving a nonlinear perturbation, and (ii.) taming the nonlinearity by coupling the semi-norm's contraction with the monotonicity of a suitably induced norm. Our main result yields the first parameter-free $\\tilde{O}(1/\\sqrt{t})$ optimal rates for $Q$-learning in both average-reward and exponentially discounted settings, where $t$ denotes the iteration index. The result applies within a broad framework that accommodates synchronous and asynchronous updates, single-agent and distributed deployments, and data streams obtained either from simulators or along Markovian trajectories.",
+    "arxiv_id": "2508.05984",
+    "publication_date": "2025-08-08T03:35:29+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2508.05984",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "2509.19199": {
+    "paper_id": "2509.19199",
+    "title": "Agentic Reinforcement Learning with Implicit Step Rewards",
+    "authors": [
+      "Xiaoqian Liu",
+      "Ke Wang",
+      "Yuchuan Wu",
+      "Fei Huang",
+      "Yongbin Li",
+      "Junge Zhang",
+      "Jianbin Jiao"
+    ],
+    "abstract": "Large language models (LLMs) are increasingly developed as autonomous agents using reinforcement learning (agentic RL) that reason and act in interactive environments. However, sparse and sometimes unverifiable rewards make it extremely challenging to assign credit when training LLM agents that serve as a policy. Recent work attempts to integrate process supervision into RL but suffers from biased annotation, reward hacking, high-variance from overly fine-grained rewards or failtures when state overlap is rare. We therefore introduce implicit step rewards for agentic RL (iStar), a general credit-assignment strategy that integrates seamlessly with standard RL algorithms without relying on additional rollouts or explicit step labels. Particularly, we alternatively optimize an implicit process reward model (PRM) with the policy model to generate implicit step rewards via a trajectory-based DPO objective. Theoretical analysis shows that this learning objective produces a step-wise reward function. Then the implicit step rewards are used to compute step-level advantages, which are combined with trajectory (or episode)-level advantages for policy updates, creating a self-reinforcing training loop. We evaluate our method on three challenging agent benchmarks, including WebShop and VisualSokoban, as well as open-ended social interactions with unverifiable rewards in SOTOPIA. Crucially, iStar shows superior performance over frontier LLMs and strong RL baselines across domains, achieving state-of-the-art results with higher sample-efficiency and training stability. Further analysis also demonstrates efficient exploration by iStar with increased rewards in both step- and episode-level while maintaining fewer steps to achieve task success. Code will be available soon.",
+    "arxiv_id": "2509.19199",
+    "publication_date": "2025-09-23T16:15:42+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2509.19199",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "2506.12751": {
+    "paper_id": "2506.12751",
+    "title": "Single Index Bandits: Generalized Linear Contextual Bandits with Unknown Reward Functions",
+    "authors": [
+      "Yue Kang",
+      "Mingshuo Liu",
+      "Bongsoo Yi",
+      "Jing Lyu",
+      "Zhi Zhang",
+      "Doudou Zhou",
+      "Yao Li"
+    ],
+    "abstract": "Generalized linear bandits have been extensively studied due to their broad applicability in real-world online decision-making problems. However, these methods typically assume that the expected reward function is known to the users, an assumption that is often unrealistic in practice. Misspecification of this link function can lead to the failure of all existing algorithms. In this work, we address this critical limitation by introducing a new problem of generalized linear bandits with unknown reward functions, also known as single index bandits. We first consider the case where the unknown reward function is monotonically increasing, and propose two novel and efficient algorithms, STOR and ESTOR, that achieve decent regrets under standard assumptions. Notably, our ESTOR can obtain the nearly optimal regret bound $\\tilde{O}_T(\\sqrt{T})$ in terms of the time horizon $T$. We then extend our methods to the high-dimensional sparse setting and show that the same regret rate can be attained with the sparsity index. Next, we introduce GSTOR, an algorithm that is agnostic to general reward functions, and establish regret bounds under a Gaussian design assumption. Finally, we validate the efficiency and effectiveness of our algorithms through experiments on both synthetic and real-world datasets.",
+    "arxiv_id": "2506.12751",
+    "publication_date": "2025-06-15T07:19:00+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2506.12751",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "2506.08998": {
+    "paper_id": "2506.08998",
+    "title": "On Monotonicity in AI Alignment",
+    "authors": [
+      "Gilles Bareilles",
+      "Julien Fageot",
+      "L\u00ea-Nguy\u00ean Hoang",
+      "Peva Blanchard",
+      "Wassim Bouaziz",
+      "S\u00e9bastien Rouault",
+      "El-Mahdi El-Mhamdi"
+    ],
+    "abstract": "Comparison-based preference learning has become central to the alignment of AI models with human preferences. However, these methods may behave counterintuitively. After empirically observing that, when accounting for a preference for response $y$ over $z$, the model may actually decrease the probability (and reward) of generating $y$ (an observation also made by others), this paper investigates the root causes of (non) monotonicity, for a general comparison-based preference learning framework that subsumes Direct Preference Optimization (DPO), Generalized Preference Optimization (GPO) and Generalized Bradley-Terry (GBT). Under mild assumptions, we prove that such methods still satisfy what we call local pairwise monotonicity. We also provide a bouquet of formalizations of monotonicity, and identify sufficient conditions for their guarantee, thereby providing a toolbox to evaluate how prone learning models are to monotonicity violations. These results clarify the limitations of current methods and provide guidance for developing more trustworthy preference learning algorithms.",
+    "arxiv_id": "2506.08998",
+    "publication_date": "2025-06-10T17:17:48+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2506.08998",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "2504.14418": {
+    "paper_id": "2504.14418",
+    "title": "Unlearning Works Better Than You Think: Local Reinforcement-Based Selection of Auxiliary Objectives",
+    "authors": [
+      "Abderrahim Bendahi",
+      "Adrien Fradin",
+      "Matthieu Lerasle"
+    ],
+    "abstract": "We introduce Local Reinforcement-Based Selection of Auxiliary Objectives (LRSAO), a novel approach that selects auxiliary objectives using reinforcement learning (RL) to support the optimization process of an evolutionary algorithm (EA) as in EA+RL framework and furthermore incorporates the ability to unlearn previously used objectives. By modifying the reward mechanism to penalize moves that do no increase the fitness value and relying on the local auxiliary objectives, LRSAO dynamically adapts its selection strategy to optimize performance according to the landscape and unlearn previous objectives when necessary. We analyze and evaluate LRSAO on the black-box complexity version of the non-monotonic Jump function, with gap parameter $\\ell$, where each auxiliary objective is beneficial at specific stages of optimization. The Jump function is hard to optimize for evolutionary-based algorithms and the best-known complexity for reinforcement-based selection on Jump was $O(n^2 \\log(n) / \\ell)$. Our approach improves over this result to achieve a complexity of $\\Theta(n^2 / \\ell^2 + n \\log(n))$ resulting in a significant improvement, which demonstrates the efficiency and adaptability of LRSAO, highlighting its potential to outperform traditional methods in complex optimization scenarios.",
+    "arxiv_id": "2504.14418",
+    "publication_date": "2025-04-19T23:00:24+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2504.14418",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "2011.10219": {
+    "paper_id": "2011.10219",
+    "title": "Certified Monotonic Neural Networks",
+    "authors": [
+      "Xingchao Liu",
+      "Xing Han",
+      "Na Zhang",
+      "Qiang Liu"
+    ],
+    "abstract": "Learning monotonic models with respect to a subset of the inputs is a desirable feature to effectively address the fairness, interpretability, and generalization issues in practice. Existing methods for learning monotonic neural networks either require specifically designed model structures to ensure monotonicity, which can be too restrictive/complicated, or enforce monotonicity by adjusting the learning process, which cannot provably guarantee the learned model is monotonic on selected features. In this work, we propose to certify the monotonicity of the general piece-wise linear neural networks by solving a mixed integer linear programming problem.This provides a new general approach for learning monotonic neural networks with arbitrary model structures. Our method allows us to train neural networks with heuristic monotonicity regularizations, and we can gradually increase the regularization magnitude until the learned network is certified monotonic. Compared to prior works, our approach does not require human-designed constraints on the weight space and also yields more accurate approximation. Empirical studies on various datasets demonstrate the efficiency of our approach over the state-of-the-art methods, such as Deep Lattice Networks.",
+    "arxiv_id": "2011.10219",
+    "publication_date": "2020-11-20T04:58:13+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2011.10219",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "2003.02601": {
+    "paper_id": "2003.02601",
+    "title": "Fuzzy k-Nearest Neighbors with monotonicity constraints: Moving towards the robustness of monotonic noise",
+    "authors": [
+      "Sergio Gonz\u00e1lez",
+      "Salvador Garc\u00eda",
+      "Sheng-Tun Li",
+      "Robert John",
+      "Francisco Herrera"
+    ],
+    "abstract": "This paper proposes a new model based on Fuzzy k-Nearest Neighbors for classification with monotonic constraints, Monotonic Fuzzy k-NN (MonFkNN). Real-life data-sets often do not comply with monotonic constraints due to class noise. MonFkNN incorporates a new calculation of fuzzy memberships, which increases robustness against monotonic noise without the need for relabeling. Our proposal has been designed to be adaptable to the different needs of the problem being tackled. In several experimental studies, we show significant improvements in accuracy while matching the best degree of monotonicity obtained by comparable methods. We also show that MonFkNN empirically achieves improved performance compared with Monotonic k-NN in the presence of large amounts of class noise.",
+    "arxiv_id": "2003.02601",
+    "publication_date": "2020-03-05T13:27:17+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2003.02601",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "2205.02342": {
+    "paper_id": "2205.02342",
+    "title": "Monotonicity versions of Epstein's Concavity Theorem and related inequalities",
+    "authors": [
+      "Eric A. Carlen",
+      "Haonan Zhang"
+    ],
+    "abstract": "Many trace inequalities can be expressed either as concavity/convexity theorems or as monotonicity theorems. A classic example is the joint convexity of the quantum relative entropy which is equivalent to the Data Processing Inequality. The latter says that quantum operations can never increase the relative entropy. The monotonicity versions often have many advantages, and often have direct physical application, as in the example just mentioned. Moreover, the monotonicity results are often valid for a larger class of maps than, say, quantum operations (which are completely positive). In this paper we prove several new monotonicity results, the first of which is a monotonicity theorem that has as a simple corollary a celebrated concavity theorem of Epstein. Our starting points are the monotonicity versions of the Lieb Concavity and the Lieb Convexity Theorems. We also give two new proofs of these in their general forms using interpolation. We then prove our new monotonicity theorems by several duality arguments.",
+    "arxiv_id": "2205.02342",
+    "publication_date": "2022-05-04T22:08:37+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2205.02342",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "2202.01044": {
+    "paper_id": "2202.01044",
+    "title": "Spectral Rank Monotonicity on Undirected Networks",
+    "authors": [
+      "Paolo Boldi",
+      "Flavio Furia",
+      "Sebastiano Vigna"
+    ],
+    "abstract": "We study the problem of score and rank monotonicity for spectral ranking methods, such as eigenvector centrality and PageRank, in the case of undirected networks. Score monotonicity means that adding an edge increases the score at both ends of the edge. Rank monotonicity means that adding an edge improves the relative position of both ends of the edge with respect to the remaining nodes. It is known that common spectral rankings are both score and rank monotone on directed, strongly connected graphs. We show that, surprisingly, the situation is very different for undirected graphs, and in particular that PageRank is neither score nor rank monotone.",
+    "arxiv_id": "2202.01044",
+    "publication_date": "2022-02-02T14:14:33+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2202.01044",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "2006.05739": {
+    "paper_id": "2006.05739",
+    "title": "Quantum monotone metrics induced from trace non-increasing maps and additive noise",
+    "authors": [
+      "Koichi Yamagata"
+    ],
+    "abstract": "Quantum monotone metric was introduced by Petz,and it was proved that quantum monotone metrics on the set of quantum states with trace one were characterized by operator monotone functions. Later, these were extended to monotone metrics on the set of positive operators whose traces are not always one based on completely positive, trace preserving (CPTP) maps. It was shown that these extended monotone metrics were characterized by operator monotone functions continuously parameterized by traces of positive operators,and did not have some ideal properties such as monotonicity and convexity with respect to the positive operators. In this paper, we introduce another extension of quantum monotone metrics which have monotonicity under completely positive, trace non-increasing (CPTNI) maps and additive noise. We prove that our extended monotone metrics can be characterized only by static operator monotone functions from few assumptions without assuming continuities of metrics. We show that our monotone metrics have some natural properties such as additivity of direct sum, convexity and monotonicity with respect to positive operators.",
+    "arxiv_id": "2006.05739",
+    "publication_date": "2020-06-10T09:09:50+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/2006.05739",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "1506.06922": {
+    "paper_id": "1506.06922",
+    "title": "Characterizations of Operator Monotonicity via Operator Means and Applications to Operator Inequalities",
+    "authors": [
+      "Pattrawut Chansangiam"
+    ],
+    "abstract": "We prove that a continuous function $f:(0,\\infty) \\to (0,\\infty)$ is operator monotone increasing if and only if $f(A \\: !_t \\: B) \\leqs f(A) \\: !_t \\: f(B)$ for any positive operators $A,B$ and scalar $t \\in [0,1]$. Here, $!_t$ denotes the $t$-weighted harmonic mean. As a counterpart, $f$ is operator monotone decreasing if and only if the reverse of preceding inequality holds. Moreover, we obtain many characterizations of operator-monotone increasingness/decreasingness in terms of operator means. These characterizations lead to many operator inequalities involving means.",
+    "arxiv_id": "1506.06922",
+    "publication_date": "2015-06-23T09:30:23+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/1506.06922",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "Reflected BSDE with monotonicity and general increasing in $y$, and non-Lipschitz conditions in $z$": {
+    "paper_id": "Reflected BSDE with monotonicity and general increasing in $y$, and non-Lipschitz conditions in $z$",
+    "title": "Reflected BSDE with monotonicity and general increasing in $y$, and non-Lipschitz conditions in $z$",
+    "authors": [
+      "Mingyu Xu"
+    ],
+    "abstract": "In this paper, we study the reflected BSDE with one continuous barrier, under the monotonicity and general increasing condition on $y$ and non Lipschitz condition on $z$. We prove the existence and uniqueness of the solution to these equation by approximation method.",
+    "arxiv_id": null,
+    "publication_date": "2006-11-28T15:40:57+00:00",
+    "citation_count": 0,
+    "url": null,
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  },
+  "0705.1026": {
+    "paper_id": "0705.1026",
+    "title": "Reflected backward SDEs with two barriers under monotonicity and general increasing conditions",
+    "authors": [
+      "Mingyu Xu"
+    ],
+    "abstract": "In this paper, we prove the existence and uniqueness result of the reflected BSDE with two continuous barriers under monotonicity and general increasing condition on $y$, with Lipschitz condition on $z$.",
+    "arxiv_id": "0705.1026",
+    "publication_date": "2007-05-08T01:53:44+00:00",
+    "citation_count": 0,
+    "url": "https://arxiv.org/abs/0705.1026",
+    "source": "arxiv",
+    "content": null,
+    "tier": 2,
+    "analysis_status": "completed"
+  }
+}

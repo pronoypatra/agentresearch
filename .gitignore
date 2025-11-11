@@ -1,0 +1,20 @@
+__pycache__/
+*.pyc
+.env
+*.env
+.DS_Store
+.idea/
+.vscode/
+*.db
+*.sqlite3
+logs/
+*.log
+# Ignore virtual environment folders
+venv/
+.env/
+# Ignore knowledge base DBs (by convention)
+knowledge_base/*.db
+knowledge_base/__pycache__/
+# Ignore output/result files if any
+output/
+results/

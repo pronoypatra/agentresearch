@@ -1,0 +1,601 @@
+{
+  "856ad9c0": {
+    "gap_id": "856ad9c0",
+    "description": "Paper may be related to A Definition of Non-Stationary Bandits but doesn't cite it",
+    "evidence": [
+      "Shared concepts: a, of",
+      "Shared concepts: a, of",
+      "Shared concepts: without, for",
+      "Shared concepts: a, of",
+      "Shared concepts: prior, an, without",
+      "Shared concepts: a, of",
+      "Shared concepts: prior, for",
+      "Shared concepts: a, of",
+      "Shared concepts: algorithm, for",
+      "Shared concepts: using, of",
+      "Shared concepts: an, for",
+      "Shared concepts: a, of",
+      "Shared concepts: using, of",
+      "Shared concepts: a, of",
+      "Shared concepts: an, for",
+      "Shared concepts: a, of",
+      "Shared concepts: kernel, for",
+      "Shared concepts: a, of",
+      "Shared concepts: using, of",
+      "Shared concepts: a, of",
+      "Shared concepts: an, without, for",
+      "Shared concepts: a, of",
+      "Shared concepts: an, algorithm, for",
+      "Shared concepts: algorithms, for",
+      "Shared concepts: strategy, for",
+      "Shared concepts: a, of",
+      "Shared concepts: an, algorithm, for",
+      "Shared concepts: using, of",
+      "Shared concepts: algorithms, for",
+      "Shared concepts: a, of",
+      "Shared concepts: a, of, bandits",
+      "Shared concepts: an, algorithm, bandits",
+      "Shared concepts: on, bandits",
+      "Shared concepts: and, bandits",
+      "Shared concepts: rate, of, bandits",
+      "Shared concepts: algorithms, bandits",
+      "Shared concepts: a, of",
+      "Shared concepts: prior, an, algorithm",
+      "Shared concepts: using, of",
+      "Shared concepts: a, of",
+      "Shared concepts: without, for",
+      "Shared concepts: rate, of",
+      "Shared concepts: a, of",
+      "Shared concepts: an, for",
+      "Shared concepts: rate, of",
+      "Shared concepts: a, of",
+      "Shared concepts: an, for",
+      "Shared concepts: a, of",
+      "Shared concepts: algorithms, for",
+      "Shared concepts: a, of",
+      "Shared concepts: an, algorithm, for",
+      "Shared concepts: a, of",
+      "Shared concepts: an, for",
+      "Shared concepts: strategy, for",
+      "Shared concepts: an, without, for",
+      "Shared concepts: algorithms, for",
+      "Shared concepts: a, of",
+      "Shared concepts: a, of",
+      "Shared concepts: an, for",
+      "Shared concepts: a, of"
+    ],
+    "priority": 0.5828571428571429,
+    "novelty_score": 0.3428571428571428,
+    "feasibility_score": 0.5,
+    "impact_score": 0.6,
+    "related_papers": [
+      "2302.12202",
+      "1506.06922",
+      "2003.02601",
+      "2302.12202",
+      "2003.02601",
+      "2205.14775",
+      "2006.08852",
+      "2302.12202",
+      "2006.08852",
+      "2205.14775",
+      "2011.10219",
+      "2302.12202",
+      "2011.10219",
+      "2205.14775",
+      "2103.04529",
+      "2302.12202",
+      "2103.04529",
+      "2205.14775",
+      "2103.04529",
+      "2308.01028",
+      "2202.01044",
+      "2205.14775",
+      "2205.02342",
+      "2302.12202",
+      "2205.02342",
+      "2308.01028",
+      "2212.03704",
+      "2302.12202",
+      "2212.03704",
+      "2205.14775",
+      "2310.13264",
+      "2302.12202",
+      "2408.03029",
+      "2205.14775",
+      "2412.15544",
+      "2302.12202",
+      "2412.15544",
+      "2308.01028",
+      "2503.18130",
+      "2302.12202",
+      "2503.18130",
+      "2205.14775",
+      "2503.21878",
+      "2302.12202",
+      "2503.21878",
+      "2205.14775",
+      "2503.21878",
+      "1710.10657",
+      "2504.14418",
+      "2303.02691",
+      "2504.14418",
+      "2302.12202",
+      "2504.14418",
+      "2205.14775",
+      "2504.14418",
+      "2308.01028",
+      "2504.14418",
+      "1710.10657",
+      "2506.08998",
+      "2302.12202",
+      "2506.12751",
+      "2302.12202",
+      "2506.12751",
+      "2205.14775",
+      "2506.12751",
+      "2110.12916",
+      "2506.12751",
+      "2009.02463",
+      "2506.12751",
+      "2308.01028",
+      "2506.12751",
+      "1710.10657",
+      "2506.12998",
+      "2302.12202",
+      "2506.12998",
+      "2205.14775",
+      "2506.12998",
+      "2308.01028",
+      "2506.22777",
+      "2302.12202",
+      "2506.22777",
+      "2205.14775",
+      "2506.22777",
+      "2308.01028",
+      "2507.16806",
+      "2302.12202",
+      "2507.16806",
+      "2205.14775",
+      "2507.16806",
+      "2308.01028",
+      "2507.19725",
+      "2302.12202",
+      "2507.19725",
+      "2205.14775",
+      "2508.05984",
+      "2302.12202",
+      "2508.05984",
+      "1710.10657",
+      "2509.00793",
+      "2302.12202",
+      "2509.00793",
+      "2205.14775",
+      "2509.14203",
+      "2302.12202",
+      "2509.14203",
+      "2205.14775",
+      "2509.19199",
+      "2303.02691",
+      "2509.19199",
+      "2205.14775",
+      "2509.19199",
+      "1710.10657",
+      "2509.23135",
+      "2302.12202",
+      "2509.25438",
+      "2302.12202",
+      "2509.25438",
+      "2205.14775",
+      "2510.26575",
+      "2302.12202"
+    ],
+    "temporal_context": null
+  },
+  "ef8d2ff0": {
+    "gap_id": "ef8d2ff0",
+    "description": "Extension identified: improvements in accuracy while matching the best degree of monotonicity obtained by comparable metho",
+    "evidence": [
+      "Extension keyword: improve"
+    ],
+    "priority": 0.4908333333333333,
+    "novelty_score": 0.525,
+    "feasibility_score": 0.5,
+    "impact_score": 0.5,
+    "related_papers": [
+      "2003.02601"
+    ],
+    "temporal_context": null
+  },
+  "09842a26": {
+    "gap_id": "09842a26",
+    "description": "Extension identified: extended to monotone metrics on the set of positive operators whose traces are not always one based ",
+    "evidence": [
+      "Extension keyword: extend"
+    ],
+    "priority": 0.5228070175438597,
+    "novelty_score": 0.631578947368421,
+    "feasibility_score": 0.5,
+    "impact_score": 0.5,
+    "related_papers": [
+      "2006.05739"
+    ],
+    "temporal_context": null
+  },
+  "0e1205bc": {
+    "gap_id": "0e1205bc",
+    "description": "Extension identified: improve the model quality compared to those that were trained without taking monotonicity constraint",
+    "evidence": [
+      "Extension keyword: improve"
+    ],
+    "priority": 0.5133333333333334,
+    "novelty_score": 0.6,
+    "feasibility_score": 0.5,
+    "impact_score": 0.5,
+    "related_papers": [
+      "2006.08852"
+    ],
+    "temporal_context": null
+  },
+  "2b8e1274": {
+    "gap_id": "2b8e1274",
+    "description": "Extension identified: improve the sample efficiency of any rl algorithm in sparse-reward environments by automatically den",
+    "evidence": [
+      "Extension keyword: improve"
+    ],
+    "priority": 0.4908333333333333,
+    "novelty_score": 0.525,
+    "feasibility_score": 0.5,
+    "impact_score": 0.5,
+    "related_papers": [
+      "2103.04529"
+    ],
+    "temporal_context": null
+  },
+  "145c0f03": {
+    "gap_id": "145c0f03",
+    "description": "Extension identified: improves the relative position of both ends of the edge with respect to the remaining nodes.",
+    "evidence": [
+      "Extension keyword: improve"
+    ],
+    "priority": 0.5013333333333334,
+    "novelty_score": 0.5599999999999999,
+    "feasibility_score": 0.5,
+    "impact_score": 0.5,
+    "related_papers": [
+      "2202.01044"
+    ],
+    "temporal_context": null
+  },
+  "c32de23a": {
+    "gap_id": "c32de23a",
+    "description": "Extension identified: improvement of the supported policy until convergence to the optimal behavior-supported policy.",
+    "evidence": [
+      "Extension keyword: improve"
+    ],
+    "priority": 0.5271794871794871,
+    "novelty_score": 0.6461538461538461,
+    "feasibility_score": 0.5,
+    "impact_score": 0.5,
+    "related_papers": [
+      "2503.18130"
+    ],
+    "temporal_context": null
+  },
+  "9212aec5": {
+    "gap_id": "9212aec5",
+    "description": "Extension identified: improves over this result to achieve a complexity of $\\theta(n^2 / \\ell^2 + n \\log(n))$ resulting in",
+    "evidence": [
+      "Extension keyword: improve"
+    ],
+    "priority": 0.5417543859649123,
+    "novelty_score": 0.6947368421052632,
+    "feasibility_score": 0.5,
+    "impact_score": 0.5,
+    "related_papers": [
+      "2504.14418"
+    ],
+    "temporal_context": null
+  },
+  "58cd4d1c": {
+    "gap_id": "58cd4d1c",
+    "description": "Extension identified: generalized preference optimization (gpo) and generalized bradley-terry (gbt). under mild assumption",
+    "evidence": [
+      "Extension keyword: generalize"
+    ],
+    "priority": 0.5433333333333334,
+    "novelty_score": 0.7000000000000001,
+    "feasibility_score": 0.5,
+    "impact_score": 0.5,
+    "related_papers": [
+      "2506.08998"
+    ],
+    "temporal_context": null
+  },
+  "1bb741d4": {
+    "gap_id": "1bb741d4",
+    "description": "Extension identified: extend our methods to the high-dimensional sparse setting and show that the same regret rate can be ",
+    "evidence": [
+      "Extension keyword: extend"
+    ],
+    "priority": 0.3933333333333333,
+    "novelty_score": 0.19999999999999998,
+    "feasibility_score": 0.5,
+    "impact_score": 0.5,
+    "related_papers": [
+      "2506.12751"
+    ],
+    "temporal_context": null
+  },
+  "f57bc8fa": {
+    "gap_id": "f57bc8fa",
+    "description": "Extension identified: generalized linear bandits have been extensively studied due to their broad applicability in real-wo",
+    "evidence": [
+      "Extension keyword: generalize"
+    ],
+    "priority": 0.4458333333333333,
+    "novelty_score": 0.375,
+    "feasibility_score": 0.5,
+    "impact_score": 0.5,
+    "related_papers": [
+      "2506.12751"
+    ],
+    "temporal_context": null
+  },
+  "4f405218": {
+    "gap_id": "4f405218",
+    "description": "Extension identified: improves their detection, offering a practical path toward more transparent and safe ai systems.",
+    "evidence": [
+      "Extension keyword: improve"
+    ],
+    "priority": 0.5358333333333334,
+    "novelty_score": 0.6749999999999999,
+    "feasibility_score": 0.5,
+    "impact_score": 0.5,
+    "related_papers": [
+      "2506.22777"
+    ],
+    "temporal_context": null
+  },
+  "b802e93c": {
+    "gap_id": "b802e93c",
+    "description": "Extension identified: improves on a variety of difficult question answering tasks. today,",
+    "evidence": [
+      "Extension keyword: improve"
+    ],
+    "priority": 0.5233333333333334,
+    "novelty_score": 0.7000000000000001,
+    "feasibility_score": 0.4,
+    "impact_score": 0.5,
+    "related_papers": [
+      "2507.16806"
+    ],
+    "temporal_context": null
+  },
+  "1ee4c07f": {
+    "gap_id": "1ee4c07f",
+    "description": "Extension identified: generalized reward matching~(grm), a method that can be used with any intrinsic reward function to g",
+    "evidence": [
+      "Extension keyword: generalize"
+    ],
+    "priority": 0.4180392156862745,
+    "novelty_score": 0.2823529411764706,
+    "feasibility_score": 0.5,
+    "impact_score": 0.5,
+    "related_papers": [
+      "2507.19725"
+    ],
+    "temporal_context": null
+  },
+  "085fdbd2": {
+    "gap_id": "085fdbd2",
+    "description": "Under-explored area: learning and optimal control under robust markov decision processes (mdps) have received increasing attention, yet most existing theory, algorithms, a",
+    "evidence": [
+      "Pattern: under.*?explored"
+    ],
+    "priority": 0.4969696969696969,
+    "novelty_score": 0.5454545454545454,
+    "feasibility_score": 0.5,
+    "impact_score": 0.5,
+    "related_papers": [
+      "2509.14203"
+    ],
+    "temporal_context": null
+  },
+  "b82082a2": {
+    "gap_id": "b82082a2",
+    "description": "Extension identified: improve stability by jointly learning reward and policy via energy-based formulations but lack forma",
+    "evidence": [
+      "Extension keyword: improve"
+    ],
+    "priority": 0.4683333333333333,
+    "novelty_score": 0.44999999999999996,
+    "feasibility_score": 0.5,
+    "impact_score": 0.5,
+    "related_papers": [
+      "2509.23135"
+    ],
+    "temporal_context": null
+  },
+  "c413566d": {
+    "gap_id": "c413566d",
+    "description": "Extension identified: improvements during exploration, we propose a novel method for intrinsically-motivated exploration, ",
+    "evidence": [
+      "Extension keyword: improve"
+    ],
+    "priority": 0.48333333333333334,
+    "novelty_score": 0.5,
+    "feasibility_score": 0.5,
+    "impact_score": 0.5,
+    "related_papers": [
+      "2509.25438"
+    ],
+    "temporal_context": null
+  },
+  "980b05f9": {
+    "gap_id": "980b05f9",
+    "description": "Extension identified: improve the reward obtained per unit of exploration cost. this paper introduce \\textbf{infoflow}, a ",
+    "evidence": [
+      "Extension keyword: improve"
+    ],
+    "priority": 0.4233333333333333,
+    "novelty_score": 0.3,
+    "feasibility_score": 0.5,
+    "impact_score": 0.5,
+    "related_papers": [
+      "2510.26575"
+    ],
+    "temporal_context": null
+  },
+  "4a38d3b2": {
+    "gap_id": "4a38d3b2",
+    "description": "Paper may be related to A Definition of Non-Stationary Bandits but doesn't cite it",
+    "evidence": [
+      "Shared concepts: of, a",
+      "Shared concepts: without, an, prior",
+      "Shared concepts: of, a",
+      "Shared concepts: prior, for",
+      "Shared concepts: of, a",
+      "Shared concepts: using, of",
+      "Shared concepts: of, a",
+      "Shared concepts: an, for, without",
+      "Shared concepts: of, a",
+      "Shared concepts: bandits, of, a",
+      "Shared concepts: bandits, algorithm, an",
+      "Shared concepts: bandits, on",
+      "Shared concepts: bandits, and",
+      "Shared concepts: bandits, rate, of",
+      "Shared concepts: bandits, algorithms",
+      "Shared concepts: of, a",
+      "Shared concepts: algorithm, an, prior",
+      "Shared concepts: using, of",
+      "Shared concepts: strategy, for",
+      "Shared concepts: an, for, without",
+      "Shared concepts: for, algorithms"
+    ],
+    "priority": 0.5828571428571429,
+    "novelty_score": 0.3428571428571428,
+    "feasibility_score": 0.5,
+    "impact_score": 0.6,
+    "related_papers": [
+      "2006.08852",
+      "2302.12202",
+      "2006.08852",
+      "2205.14775",
+      "2011.10219",
+      "2302.12202",
+      "2011.10219",
+      "2205.14775",
+      "2412.15544",
+      "2302.12202",
+      "2412.15544",
+      "2308.01028",
+      "2503.18130",
+      "2302.12202",
+      "2503.18130",
+      "2205.14775",
+      "2506.08998",
+      "2302.12202",
+      "2506.12751",
+      "2302.12202",
+      "2506.12751",
+      "2205.14775",
+      "2506.12751",
+      "2110.12916",
+      "2506.12751",
+      "2009.02463",
+      "2506.12751",
+      "2308.01028",
+      "2506.12751",
+      "1710.10657",
+      "2506.12998",
+      "2302.12202",
+      "2506.12998",
+      "2205.14775",
+      "2506.12998",
+      "2308.01028",
+      "2509.19199",
+      "2303.02691",
+      "2509.19199",
+      "2205.14775",
+      "2509.19199",
+      "1710.10657"
+    ],
+    "temporal_context": null
+  },
+  "316da7a8": {
+    "gap_id": "316da7a8",
+    "description": "Extension identified: improve the model quality compared to those that were trained without taking monotonicity constraint",
+    "evidence": [
+      "Extension keyword: improve"
+    ],
+    "priority": 0.5133333333333334,
+    "novelty_score": 0.6,
+    "feasibility_score": 0.5,
+    "impact_score": 0.5,
+    "related_papers": [
+      "2006.08852"
+    ],
+    "temporal_context": null
+  },
+  "90c90813": {
+    "gap_id": "90c90813",
+    "description": "Extension identified: improvement of the supported policy until convergence to the optimal behavior-supported policy.",
+    "evidence": [
+      "Extension keyword: improve"
+    ],
+    "priority": 0.5271794871794871,
+    "novelty_score": 0.6461538461538461,
+    "feasibility_score": 0.5,
+    "impact_score": 0.5,
+    "related_papers": [
+      "2503.18130"
+    ],
+    "temporal_context": null
+  },
+  "ebaa480b": {
+    "gap_id": "ebaa480b",
+    "description": "Extension identified: generalized preference optimization (gpo) and generalized bradley-terry (gbt). under mild assumption",
+    "evidence": [
+      "Extension keyword: generalize"
+    ],
+    "priority": 0.5433333333333334,
+    "novelty_score": 0.7000000000000001,
+    "feasibility_score": 0.5,
+    "impact_score": 0.5,
+    "related_papers": [
+      "2506.08998"
+    ],
+    "temporal_context": null
+  },
+  "03e26fdd": {
+    "gap_id": "03e26fdd",
+    "description": "Extension identified: extend our methods to the high-dimensional sparse setting and show that the same regret rate can be ",
+    "evidence": [
+      "Extension keyword: extend"
+    ],
+    "priority": 0.3933333333333333,
+    "novelty_score": 0.19999999999999998,
+    "feasibility_score": 0.5,
+    "impact_score": 0.5,
+    "related_papers": [
+      "2506.12751"
+    ],
+    "temporal_context": null
+  },
+  "a04904c8": {
+    "gap_id": "a04904c8",
+    "description": "Extension identified: generalized linear bandits have been extensively studied due to their broad applicability in real-wo",
+    "evidence": [
+      "Extension keyword: generalize"
+    ],
+    "priority": 0.4458333333333333,
+    "novelty_score": 0.375,
+    "feasibility_score": 0.5,
+    "impact_score": 0.5,
+    "related_papers": [
+      "2506.12751"
+    ],
+    "temporal_context": null
+  }
+}
