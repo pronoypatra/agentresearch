@@ -1,7 +1,5 @@
 # Multi-Agent Research Analysis System
 
-**🚀 Now Powered by LangGraph & LangChain!**
-
 An interactive multi-agent system for analyzing theoretical ML papers with deep mathematical understanding, unified notation resolution, and research gap identification. Enhanced with LLM-powered analysis for superior results.
 
 ## Features
@@ -45,13 +43,13 @@ export OPENAI_API_KEY="your-api-key-here"
 # Or create .env file with: OPENAI_API_KEY=your-api-key-here
 ```
 
-**Note**: The system now uses LangGraph for orchestration and LangChain for LLM-powered analysis. Make sure to set your OpenAI API key.
+**Note**: The system uses LangGraph for orchestration and LangChain for LLM-powered analysis. Make sure to set your OpenAI API key.
 
 ## Usage
 
 ### Running the Gradio Interface
 
-**New LangGraph Version (Recommended):**
+**LangGraph Version (Recommended):**
 ```bash
 # Activate virtual environment
 source venv/bin/activate  # On Windows: venv\Scripts\activate
@@ -60,7 +58,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 python interface/gradio_app_langgraph.py
 ```
 
-**Legacy Version (Still Available):**
+**Legacy Version:**
 ```bash
 python interface/gradio_app.py
 ```
@@ -68,10 +66,10 @@ python interface/gradio_app.py
 The interface will launch at `http://localhost:7860`
 
 **Key Features of LangGraph Version:**
-- ✅ LLM-enhanced context building and gap analysis
-- ✅ Session-based checkpointing
-- ✅ Better error handling
-- ✅ Improved query generation
+- LLM-enhanced context building and gap analysis
+- Session-based checkpointing
+- Better error handling
+- Improved query generation
 
 **Workflow:**
 1. **Stage 1 Tab**: Enter research query and optional seed papers
@@ -88,7 +86,7 @@ The interface will launch at `http://localhost:7860`
 
 ### Using the API
 
-**New LangGraph Coordinator (Recommended):**
+**LangGraph Coordinator (Recommended):**
 ```python
 from agents.langgraph_coordinator import LangGraphCoordinator
 
@@ -114,7 +112,7 @@ stage2_results = coordinator.stage2_search_and_analyze(
 )
 ```
 
-**Legacy Coordinator (Still Available):**
+**Legacy Coordinator:**
 ```python
 from agents.coordinator import Coordinator
 
@@ -234,18 +232,18 @@ temporal_metadata = stage2_results['temporal_metadata']
 
 ## Current Status
 
-**✅ Latest Implementation (LangGraph Version):**
-- ✅ LangGraph state machine orchestration with checkpointing
-- ✅ LangChain LLM integration for enhanced analysis
-- ✅ LLM-powered context building and query generation
-- ✅ Session-based state persistence
-- ✅ Enhanced error handling and observability
-- ✅ Stage 1: Paper search, deep analysis, unified notation, LLM-enhanced context building
-- ✅ Stage 2: LLM-enhanced query generation, multi-query search, temporal arrangement, shallow analysis, gap synthesis
-- ✅ Knowledge base: All storage components
-- ✅ Gradio interface: Both Stage 1 and Stage 2 with LangGraph support
+**LangGraph Version:**
+- LangGraph state machine orchestration with checkpointing
+- LangChain LLM integration for enhanced analysis
+- LLM-powered context building and query generation
+- Session-based state persistence
+- Enhanced error handling and observability
+- Stage 1: Paper search, deep analysis, unified notation, LLM-enhanced context building
+- Stage 2: LLM-enhanced query generation, multi-query search, temporal arrangement, shallow analysis, gap synthesis
+- Knowledge base: All storage components
+- Gradio interface: Both Stage 1 and Stage 2 with LangGraph support
 
-**Legacy Implementation (Still Available):**
+**Legacy Implementation:**
 - Stage 1: Paper search, deep analysis, unified notation, context building
 - Stage 2: Query generation, multi-query search, temporal arrangement, shallow analysis, gap synthesis
 - Knowledge base: All storage components
