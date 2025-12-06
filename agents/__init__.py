@@ -12,6 +12,8 @@ from .temporal_arrangement_agent import TemporalArrangementAgent
 from .shallow_analysis_agent import ShallowAnalysisAgent, GapCandidate
 from .gap_synthesis_agent import GapSynthesisAgent, PrioritizedGap
 from .coordinator import Coordinator
+from .langgraph_coordinator import LangGraphCoordinator
+from .state import ResearchAnalysisState
 
 __all__ = [
     'Stage1PaperSearchAgent',
@@ -28,5 +30,7 @@ __all__ = [
     'GapSynthesisAgent',
     'PrioritizedGap',
     'Coordinator',
+    'LangGraphCoordinator',
+    'ResearchAnalysisState',
 ]
 

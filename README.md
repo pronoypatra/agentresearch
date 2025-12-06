@@ -1,6 +1,8 @@
 # Multi-Agent Research Analysis System
 
-An interactive multi-agent system for analyzing theoretical ML papers with deep mathematical understanding, unified notation resolution, and research gap identification.
+**🚀 Now Powered by LangGraph & LangChain!**
+
+An interactive multi-agent system for analyzing theoretical ML papers with deep mathematical understanding, unified notation resolution, and research gap identification. Enhanced with LLM-powered analysis for superior results.
 
 ## Features
 
@@ -37,21 +39,39 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
+
+# Set OpenAI API key (required for LLM features)
+export OPENAI_API_KEY="your-api-key-here"
+# Or create .env file with: OPENAI_API_KEY=your-api-key-here
 ```
+
+**Note**: The system now uses LangGraph for orchestration and LangChain for LLM-powered analysis. Make sure to set your OpenAI API key.
 
 ## Usage
 
 ### Running the Gradio Interface
 
+**New LangGraph Version (Recommended):**
 ```bash
 # Activate virtual environment
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# Run the interface
+# Run the LangGraph-powered interface
+python interface/gradio_app_langgraph.py
+```
+
+**Legacy Version (Still Available):**
+```bash
 python interface/gradio_app.py
 ```
 
 The interface will launch at `http://localhost:7860`
+
+**Key Features of LangGraph Version:**
+- ✅ LLM-enhanced context building and gap analysis
+- ✅ Session-based checkpointing
+- ✅ Better error handling
+- ✅ Improved query generation
 
 **Workflow:**
 1. **Stage 1 Tab**: Enter research query and optional seed papers
@@ -68,15 +88,18 @@ The interface will launch at `http://localhost:7860`
 
 ### Using the API
 
+**New LangGraph Coordinator (Recommended):**
 ```python
-from agents.coordinator import Coordinator
+from agents.langgraph_coordinator import LangGraphCoordinator
 
-coordinator = Coordinator()
+coordinator = LangGraphCoordinator(llm_model="gpt-4o-mini")
+config = {"configurable": {"thread_id": "my_session"}}
 
 # Stage 1: Search and analyze Tier 1 papers
 results = coordinator.stage1_search_and_analyze(
     query="generalization bounds for deep learning",
-    seed_papers=["1234.5678", "2345.6789"]  # Optional
+    seed_papers=["1234.5678", "2345.6789"],  # Optional
+    config=config
 )
 
 # Access Stage 1 results
@@ -84,9 +107,21 @@ papers = results['papers']
 unified_notation = results['unified_notation']
 context = results['context']
 
-# Stage 2: Search and analyze Tier 2 papers
+# Stage 2: Search and analyze Tier 2 papers (use same config)
 stage2_results = coordinator.stage2_search_and_analyze(
-    tier2_query="extensions and applications"
+    tier2_query="extensions and applications",
+    config=config  # Same thread_id for checkpointing
+)
+```
+
+**Legacy Coordinator (Still Available):**
+```python
+from agents.coordinator import Coordinator
+
+coordinator = Coordinator()
+results = coordinator.stage1_search_and_analyze(
+    query="generalization bounds for deep learning",
+    seed_papers=["1234.5678", "2345.6789"]
 )
 
 # Access Stage 2 results
@@ -199,12 +234,22 @@ temporal_metadata = stage2_results['temporal_metadata']
 
 ## Current Status
 
-**Implementation:**
+**✅ Latest Implementation (LangGraph Version):**
+- ✅ LangGraph state machine orchestration with checkpointing
+- ✅ LangChain LLM integration for enhanced analysis
+- ✅ LLM-powered context building and query generation
+- ✅ Session-based state persistence
+- ✅ Enhanced error handling and observability
+- ✅ Stage 1: Paper search, deep analysis, unified notation, LLM-enhanced context building
+- ✅ Stage 2: LLM-enhanced query generation, multi-query search, temporal arrangement, shallow analysis, gap synthesis
+- ✅ Knowledge base: All storage components
+- ✅ Gradio interface: Both Stage 1 and Stage 2 with LangGraph support
+
+**Legacy Implementation (Still Available):**
 - Stage 1: Paper search, deep analysis, unified notation, context building
 - Stage 2: Query generation, multi-query search, temporal arrangement, shallow analysis, gap synthesis
 - Knowledge base: All storage components
 - Gradio interface: Both Stage 1 and Stage 2
-- Coordinator: Full two-stage workflow orchestration
 
 **Future Enhancements:**
 - Mathematical Relation Graph (MRG) with embeddings
@@ -212,6 +257,8 @@ temporal_metadata = stage2_results['temporal_metadata']
 - Enhanced theorem/proof extraction
 - Interactive visualization of knowledge graphs
 - Learning from user feedback
+- Database-backed checkpointing for production
+- LangSmith integration for observability
 
 ## Key Features in Detail
 
